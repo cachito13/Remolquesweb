@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    
+    width: 100%;
+    display: inline-block;
+    background-image: url(../img/imgenca.jpg);
+    background-color: rgb(14, 14, 14);
+   border-radius: 13px;
+  
+    padding: 1rem;
+    border: 4px solid rgba(255, 102, 0, 0.925);
+
+
+}
+.nav {
+  width: 100%;
+  font-size: 1.5rem;
+}
+.header__titulo {
+
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+}
+/******menu********/
+
+.menu {
+    
+   
+    background-image: url(../img/camiondib1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+
+    color: rgb(20, 20, 20);
+    padding: 1rem;
+    font-size: 2rem;
+    
+
+}
+
+
+.nav__item {
+        
+        margin-right: 20px;
+        margin-left: 10px;
+       text-align: center;
+       display:inline-block;
+     
+}
+
+main {
+    padding: 40px;
+}
+
+/*******cards********/
+
+.card {
+    display: inline-block;
+    width: 300px;
+    background-color: rgba(230, 90, 25, 0.349);
+    border: 2px solid rgb(170, 9, 9);
+    padding: 10px;    
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-inline: 140px;
+
+}
+
+.card__img {
+   
+    width: 100%;
+
+
+}
+
+.card__titulo {
+    padding: 1rem 0rem 1rem 0rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 20px;
+
+}
+.card__parrafo{
+    font-size: 16px;
+
+}
+
+/*******************************footer***********************/
+footer {
+    background-image: url(../img/imgenca.jpg);
+    padding-top: 2rem;;
+    justify-content: space-between;
+    
+    
+
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(3, 3, 3);
+    padding: 1rem;
+}
+/*whatsap*/
+.wpp {
+
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+/******************ventas********************/
+
+.main__ventas {
+
+    background-image: url(/img/ventas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: blue;
+    height: 80vh;
+    padding: 2rem;
+}
+
+.header__titulo {
+
+    padding: 2rem;
+}
+.tabla__ventas {
+   background-color: rgba(235, 231, 12, 0.603);
+   border: 1px solid rgb(44, 12, 224);
+   width: 100%;
+}
+th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+   
+    
+ }
+
+/****************contacto****************/
+.titulo__cot {
+    text-align:center;
+   font-size: 2rem ;
+   font-family: 'Alfa Slab One', cursive;
+}
+form {
+    padding: 3rem;
+
+}
+/**************Nuestra Empresa*********************/
+.nuestra__titulo {
+    text-align:center;
+    font-size: 2rem ;
+    padding-top: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+}
+.nuestra__desc {
+    text-align:center;
+    font-size: 1rem ;
+    padding: 2rem;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.foto {
+width: 500px;
+display: inline-block;
+background-color: rgba(230, 90, 25, 0.349);
+border: 2px solid rgb(170, 9, 9);
+padding: 10px;    
+
+border-radius: 10px;
+
+margin: 20px;
+
+}
+
+.foto__img {
+
+    width: 100%;
+}
+/*****************Trasladamos**********************/
+.trasladamos__titulo {
+
+    text-align:center;
+    font-size: 2rem ;
+    padding-top: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.trasladamos {
+
+    display: inline-block;
+    width: 500px;
+    background-color: rgba(230, 90, 25, 0.349);
+    border: 2px solid rgb(170, 9, 9);
+    padding: 10px;    
+    border-radius: 10px;
+    margin-inline: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.trasladamos__img {
+
+    width: 100%;
+ 
+}
