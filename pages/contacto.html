@@ -1,98 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>contacto</title>
 </head>
 
 <body>
-    
-        <header class="header">
 
-            <h2 class="header__titulo">Contacto</h2>
-            <br>
+    <header class="header">
 
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="../index.html">INICIO</a></li>
-                    <li class="nav__item">CONTACTO</li>
-                    <li class="nav__item"><a href="../pages/ventas.html">VENTAS DE BATERIAS</a></li>
-                    <li class="nav__item"> <a href="../pages/trasladamos.html">TRASLADAMOS</a> </li>
-                    <li class="nav__item"><a href="../pages/nuestraempresa.html">NUESTRA EMPRESA</a></li>
 
-                </ul>
-            </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Remolques Muñoz<i class="bi bi-truck-flatbed"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
 
-        </header>
-       
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trasladamos.html">TRASLADAMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ventas.html">VENTA DE BATERIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nuestraempresa.html">NUESTRA EMPRESA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="">CONTACTO</a>
+                        </li>
 
-            <main>
 
-                <section>
-                   
-                    <form>
-                        <h2 class="titulo__cot">Complete el formulario</h2>
-                        <br>
-                        <br>
-                        <div>
-                            <label for="nombre-usuario">Nombre y apellido:</label>
-                            <input type="text" name="nombre" id="nombre-usuario" placeholder="Nombre Apellido" required>
-                        </div>
-                        <br>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-                        <div>
-                            <label for="">Asunto:</label>
-                            <select name="asunto" id="">
-                                <option value="cotizacion">Cotizacion</option>
-                                <option value="consulta">Consulta</option>
-                                <option value="reclamo">Reclamos</option>
+    </header>
 
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="">Email:</label>
-                            <input type="email" name="email" required>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="">Telefono:</label>
-                            <input type="number" name="telefono" required>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="">Mensaje:</label>
-                            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <br>
-                       
-                        <input type="submit" value="Enviar">
 
-                    </form>
+    <main>
 
-                </section>
+        <section>
+            
 
-            </main>
+           <form method="POST" action="/index.php" class="needs-validation" novalidate>
+            <h2 class="titulo__cot">Complete el formulario</h2>
+                <div class="form-row mt-5">
+                    <div class="col-md-4 mb-3">
+                        <label for="validarNombre">Nombre:<span class="red">*</span></label>
+                        <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
+                        <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validarEmail">Email:<span class="red">*</span></label>
+                        <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validarTelefono">Teléfono:</label>
+                        <input type="number" class="form-control" id="validarTelefono" name="validarTelefono"
+                            max="999999999">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validarTema">Tema:<span class="red">*</span></label>
+                        <select class="custom-select" id="validarTema" name="validarTema" required>
+                            <option selected disabled value="">Selecciona...</option>
+                            <option value="Problema con acceso a Web">Problema con acceso a Web</option>
+                            <option value="Propuesta de colaboración">Propuesta de colaboración</option>
+                            <option value="Eliminar mi usuario de la Web">Eliminar mi usuario de la Web</option>
+                            <option value="Otras cuestiones">Otras cuestiones</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validarAsunto">Asunto:</label>
+                        <input type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="validationMensaje">Mensaje:<span class="red">*</span></label>
+                    <textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25"
+                        required></textarea>
+                </div>
+
+                <div class="form-group mb-10">
+                    <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+                    <button class="btn btn-success" type="reset" name="reset">Limpiar</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
 
 </body>
 <footer>
+    <div class="footer__top">
+        <div>
+            <h2 class="footer__title"><i class="bi bi-truck-flatbed"></i> REMOLQUES MUÑOZ</h2>
 
-    <div class="footer">
-        <div class="footer__top">
-            <div>
-             <h2><i class="bi bi-egg-fried"></i> REMOLQUES MUÑOZ</h2>
-             <P>Servicio de emergencias mecanicas </P>
-             </div>
-             
-             <div class="address">
-                 <p> Calle 41, Las talitas, Tucuman <br>
-                   INFO@REMOLQUESMUNOZ.COM</P>
-             </div>
-         </div>
+            <P>Servicio de emergencias mecanicas </P>
+            <p> Calle 41, Las talitas, Tucuman <br>
+                INFO@REMOLQUESMUNOZ.COM</P>
+
+        </div>
+
+        <div class="redes">
+            <h3 class="redes__title">Seguinos en nuestras redes</h3>
+
+
+            <div class="redes__iconos">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+            </div>
+        </div>
+
 
 </footer>
+
 </html>

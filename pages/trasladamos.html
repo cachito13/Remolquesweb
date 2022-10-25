@@ -1,85 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Trasladamos</title>
 </head>
+
 <body>
     <header class="header">
 
-        <h2 class="header__titulo">TRASLADAMOS</h2>
-        <br>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="../index.html">INICIO</a></li>
-                <li class="nav__item"><a href="../pages/contacto.html">CONTACTO </a> </li>
-                <li class="nav__item"> <a href="../pages/ventas.html">VENTAS DE BATERIAS</a> </li>
-                <li class="nav__item"> TRASLADAMOS</li>
-                <li class="nav__item"><a href="../pages/nuestraempresa.html">NUESTRA EMPRESA</a> </li>
 
-            </ul>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Remolques Muñoz<i class="bi bi-truck-flatbed"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="">TRASLADAMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ventas.html">VENTA DE BATERIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nuestraempresa.html">NUESTRA EMPRESA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
         </nav>
-
+        
     </header>
 
     <main>
+       
+
+        <section class="productos">
+            <h2 class="productos__titulo">Nuestros Servicios</h2>
+            <div class="cards">
+
+                <div class="card">
+
+                    <img class="card__img" src="../img/uno.jfif" alt="grua">
+                    <h4 class="card__titulo">AUXILIO MECANICO</h4>
+                    <p class="card__parrafo">Auxilio Mecanico, Remolques, Grúa Para Autos Y Camionetas 4x4. El Mejor Servicio disponibles las 24 horas</p>
+
+                </div>
+                <div class="card">
+
+                    <img class="card__img" src="../img/dos.jfif" alt="grua">
+                    <h4 class="card__titulo">TRASLADOS</h4>
+                    <p class="card__parrafo">Experiencia en Traslados de vehículos particulares, de colección o de concesionarias a todo el país..</p>
+
+                </div>
+                <div class="card">
+
+                    <img class="card__img" src="../img/tres.jfif" alt="grua">
+                    <h4 class="card__titulo">SERVICIO MECANICO</h4>
+                    <p class="card__parrafo">Disponemos de una camioneta para el servicio de venta de baterias a domicilio y reparaciones en Gral.</p>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="footer__top">
             <div>
-                <H2 class="trasladamos__titulo">Realizamos los siguientes traslados</H2>
+                <h2 class="footer__title"><i class="bi bi-truck-flatbed"></i> REMOLQUES MUÑOZ</h2>
+
+                <P>Servicio de emergencias mecanicas </P>
+                <p> Calle 41, Las talitas, Tucuman <br>
+                    INFO@REMOLQUESMUNOZ.COM</P>
 
             </div>
 
-            <div class="trasladamos">
-                <h4>AUTO</h4>
-                <img src="../img/trasimg/auto.png" width="400" height="250"alt="auto">
-                
-            </div>
-            <div class="trasladamos">
-                <h4>AUTOS DE COMPETICION</h4>
-                <img src="../img/trasimg/autocomp.png" width="400" height="250"alt="autp">
-                
-            </div>
-            <div class="trasladamos">
-                <h4>LANCHAS</h4>
-                <img src="../img/trasimg/barcos.png" width="400" height="250"alt="autp">
-                
-            </div>
-            <div class="trasladamos">
-                <h4>CAMIONETAS</h4>
-                <img src="../img/trasimg/camioneta.png" width="400" height="250" alt="autp">
-                
-            </div>
-            <div class="trasladamos">
-                <h4>MOTOS</h4>
-                <img src="../img/trasimg/moto-electrica-de-pista-shadow-kw-motors-foto-transparente-min-e1538967358902.png" width="400" height="250"alt="autp">
-                
-            </div>
-            <div class="trasladamos">
-                <h4>TRACTORES</h4>
-                <img src="../img/trasimg/tractor.png" width="400" height="250"alt="autp">
-                
-            </div>
-        </main>
+            <div class="redes">
+                <h3 class="redes__title">Seguinos en nuestras redes</h3>
 
- <footer>
 
-        <div class="footer">
-            <div class="footer__top">
-                <div>
-                    <h2><i class="bi bi-egg-fried"></i> REMOLQUES MUÑOZ</h2>
-                    <P>Servicio de emergencias mecanicas </P>
-                </div>
-
-                <div class="address">
-                    <p> Calle 41, Las talitas, Tucuman <br>
-                        INFO@REMOLQUESMUNOZ.COM</P>
+                <div class="redes__iconos">
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
                 </div>
             </div>
 
-    </footer>
+
+    </footer>>
 
 
 </body>
+
 </html>

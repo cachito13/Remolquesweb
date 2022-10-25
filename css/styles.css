@@ -15,38 +15,44 @@ a {
     text-decoration: none;
 }
 
-header {
+body{
+    background-color: rgb(129, 123, 123);
+}
+.navbar{
+background-color: rgb(56, 139, 139);
+
+}
+.portada {
     
-    width: 100%;
-    display: inline-block;
-    background-image: url(../img/imgenca.jpg);
-    background-color: rgb(14, 14, 14);
-   border-radius: 13px;
+   background-image: url(../img/camiondib1\(1\).jpg);
+   background-position: center;
+    background-size:cover;
+    height: 100vh;
+   
   
-    padding: 1rem;
-    border: 4px solid rgba(255, 102, 0, 0.925);
+   
+}
+.portada__texto {
+    display: flex;
+    justify-content:space-between ;
+    color: aliceblue;
+    background-color: rgba(128, 128, 128, 0.24);
+   padding-left: 1rem;
+   padding-top: 1rem;
+    
+}
 
 
-}
-.nav {
-  width: 100%;
-  font-size: 1.5rem;
-}
-.header__titulo {
 
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Alfa Slab One', cursive;
-}
 /******menu********/
 
 .menu {
     
    
-    background-image: url(../img/camiondib1.jpg);
+    
     background-size:cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 90vh;
 
     color: rgb(20, 20, 20);
     padding: 1rem;
@@ -55,32 +61,51 @@ header {
 
 }
 
-
-.nav__item {
+.nav-item {
         
         margin-right: 20px;
         margin-left: 10px;
        text-align: center;
        display:inline-block;
-     
+       
 }
-
+.nav-item a {
+    color: aliceblue;
+  }
 main {
     padding: 40px;
 }
 
 /*******cards********/
 
+.cards {
+    display: flex;
+   justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    
+  
+}
 .card {
-    display: inline-block;
-    width: 300px;
-    background-color: rgba(230, 90, 25, 0.349);
-    border: 2px solid rgb(170, 9, 9);
-    padding: 10px;    
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-inline: 140px;
+  
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border: solid 2px rgb(136, 126, 126);
+    min-width: 400px;/*para que no se achique tanto*/
+    max-width: 500px;
+    height: 30 0px;
+
+    /*sombra a la tarj*/
+    box-shadow: 1px 8px 8px;
+    border-radius: 10px;
+    /*la img pasa el borde de su contenedor*/
+    overflow: hidden;
+   
+      
 }
 
 .card__img {
@@ -98,17 +123,31 @@ main {
 
 }
 .card__parrafo{
+    margin: 1rem;
     font-size: 16px;
 
 }
 
+/*************************ubicacion************************/
+.ubicacion__title{
+   
+    font-size: 2rem;
+    text-align: center;
+    padding: 15px;
+   
+}
+.ubicacion__mapa {
+    padding-top: 1rem;
+width: 100%;
+height: 35vh;
+border: 0;
+}
 /*******************************footer***********************/
 footer {
-    background-image: url(../img/imgenca.jpg);
+    background-color: aqua;
     padding-top: 2rem;;
     justify-content: space-between;
-    
-    
+     
 
 }
 
@@ -118,16 +157,28 @@ footer {
     color: rgb(3, 3, 3);
     padding: 1rem;
 }
-/*whatsap*/
-.wpp {
 
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 100px;
-    border-radius: 50px;
-    margin: 5px;
-}
+
+.footer__top p {
+    text-align: center;
+    }
+    
+    .redes__title {
+    text-align: center;
+    font-size: 1.2rem;
+    
+    }
+    .redes__iconos {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 10px;
+    }
+    .redes__iconos i {
+        font-size: 2rem;
+        color: rgb(10, 10, 10);
+    
+    }
 
 /******************ventas********************/
 
@@ -143,7 +194,12 @@ footer {
 
 .header__titulo {
 
-    padding: 2rem;
+   
+        text-align:center;
+        font-size: 2rem ;
+        padding-top: 2rem;
+        font-family: 'Alfa Slab One', cursive;
+   
 }
 .tabla__ventas {
    background-color: rgba(235, 231, 12, 0.603);
@@ -170,6 +226,11 @@ form {
 
 }
 /**************Nuestra Empresa*********************/
+.fotos {
+    display: flex;
+ 
+    
+}
 .nuestra__titulo {
     text-align:center;
     font-size: 2rem ;
@@ -201,30 +262,96 @@ margin: 20px;
     width: 100%;
 }
 /*****************Trasladamos**********************/
-.trasladamos__titulo {
+.productos__titulo{
+    text-align:center;
+    font-size: 2rem ;
+    padding-top: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+
+}
+
+.trasladamos{
 
     text-align:center;
     font-size: 2rem ;
     padding-top: 2rem;
     font-family: 'Alfa Slab One', cursive;
-}
-
-.trasladamos {
-
-    display: inline-block;
-    width: 500px;
+    
+    height: 400px;
     background-color: rgba(230, 90, 25, 0.349);
-    border: 2px solid rgb(170, 9, 9);
+    border: 2px solid rgb(0, 0, 0);
     padding: 10px;    
     border-radius: 10px;
     margin-inline: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 20px;
 
 }
 
-.trasladamos__img {
+.grid {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6" ;
+    gap: 1rem;
+}
 
-    width: 100%;
- 
+.grid_item{
+
+    background-size:cover;
+    background-position: center center ;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    border: solid rgb(20, 20, 20);
+    box-shadow: 1px 8px 8px;
+    border-radius: 20px;
+    height: 150px;
+    
+}
+.grid_item1 {
+    grid-area: item1;
+    background-image: url(../img/trasimg/auto.png);
+    
+     
+}
+.grid_item2 {
+    grid-area: item2;
+    background-image: url(../img/trasimg/autocomp.png);
+}
+
+.grid_item3 {
+    grid-area: item3;
+    background-image: url(../img/trasimg/barcos.png);
+}
+
+.grid_item4 {
+    grid-area: item4;
+    background-image: url(../img/trasimg/camioneta.png);
+}
+.grid_item5 {
+    grid-area: item5;
+    background-image: url(../img/trasimg/moto-electrica-de-pista-shadow-kw-motors-foto-transparente-min-e1538967358902.png);
+}
+.grid_item6 {
+    grid-area: item6;
+    background-image: url(../img/trasimg/tractor.png);
+}
+
+
+
+
+
+/*
+@media screen and (min-width: 350px){
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}/*
+
 }
