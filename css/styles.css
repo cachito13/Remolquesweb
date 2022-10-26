@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -15,272 +17,98 @@ a {
     text-decoration: none;
 }
 
-body{
+body {
     background-color: rgb(129, 123, 123);
 }
-.navbar{
-background-color: rgb(56, 139, 139);
+
+/*********************************************INDEX*************************************/
+/***************************************************************************************/
+
+/****************************************Barra de Navegacion****************************/
+
+
+.nav__titulo {
+    font-size: 1rem;
+    font-family: 'Alfa Slab One', cursive;
 
 }
-.portada {
-    
-   background-image: url(../img/camiondib1\(1\).jpg);
-   background-position: center;
-    background-size:cover;
-    height: 100vh;
-   
-  
-   
-}
-.portada__texto {
-    display: flex;
-    justify-content:space-between ;
+
+.logo {
     color: aliceblue;
-    background-color: rgba(128, 128, 128, 0.24);
-   padding-left: 1rem;
-   padding-top: 1rem;
-    
+    padding-left: 1rem;
+
 }
 
-
-
-/******menu********/
-
-.menu {
-    
-   
-    
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 90vh;
-
-    color: rgb(20, 20, 20);
-    padding: 1rem;
-    font-size: 2rem;
-    
-
+.navbar {
+    padding: 1.5rem;
 }
 
 .nav-item {
-        
-        margin-right: 20px;
-        margin-left: 10px;
-       text-align: center;
-       display:inline-block;
-       
+    margin-right: 20px;
+    margin-left: 10px;
+    text-align: center;
+    display: inline-block;
+
 }
+
 .nav-item a {
     color: aliceblue;
-  }
+}
+
 main {
     padding: 40px;
 }
 
-/*******cards********/
-
-.cards {
+.container {
     display: flex;
-   justify-content: space-between;
-    gap: 20px;
-    padding: 15px;
-    
-  
+    justify-content: flex-end;
 }
-.card {
-  
 
+
+
+/******************************************Titulo portada********************************/
+.portada {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-
-    border: solid 2px rgb(136, 126, 126);
-    min-width: 400px;/*para que no se achique tanto*/
-    max-width: 500px;
-    height: 30 0px;
-
-    /*sombra a la tarj*/
-    box-shadow: 1px 8px 8px;
-    border-radius: 10px;
-    /*la img pasa el borde de su contenedor*/
-    overflow: hidden;
-   
-      
-}
-
-.card__img {
-   
-    width: 100%;
-
-
-}
-
-.card__titulo {
-    padding: 1rem 0rem 1rem 0rem;
-    text-align: center;
-    padding: 1rem;
-    font-size: 20px;
-
-}
-.card__parrafo{
-    margin: 1rem;
-    font-size: 16px;
-
-}
-
-/*************************ubicacion************************/
-.ubicacion__title{
-   
-    font-size: 2rem;
-    text-align: center;
-    padding: 15px;
-   
-}
-.ubicacion__mapa {
-    padding-top: 1rem;
-width: 100%;
-height: 35vh;
-border: 0;
-}
-/*******************************footer***********************/
-footer {
-    background-color: aqua;
-    padding-top: 2rem;;
-    justify-content: space-between;
-     
-
-}
-
-.footer__top {
-    display: flex;
-    justify-content: space-between;
-    color: rgb(3, 3, 3);
-    padding: 1rem;
-}
-
-
-.footer__top p {
-    text-align: center;
-    }
-    
-    .redes__title {
-    text-align: center;
-    font-size: 1.2rem;
-    
-    }
-    .redes__iconos {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        padding-top: 10px;
-    }
-    .redes__iconos i {
-        font-size: 2rem;
-        color: rgb(10, 10, 10);
-    
-    }
-
-/******************ventas********************/
-
-.main__ventas {
-
-    background-image: url(/img/ventas.jpg);
-    background-repeat: no-repeat;
+    background-image: url(../img/camiondib1\(1\).jpg);
     background-position: center;
-    background-color: blue;
-    height: 80vh;
+    background-size: cover;
+    height: 100vh;
+}
+
+.portada__titulo {
     padding: 2rem;
-}
-
-.header__titulo {
-
-   
-        text-align:center;
-        font-size: 2rem ;
-        padding-top: 2rem;
-        font-family: 'Alfa Slab One', cursive;
-   
-}
-.tabla__ventas {
-   background-color: rgba(235, 231, 12, 0.603);
-   border: 1px solid rgb(44, 12, 224);
-   width: 100%;
-}
-th, td {
-    width: 25%;
-    text-align: left;
-    vertical-align: top;
-    border: 1px solid #000;
-   
-    
- }
-
-/****************contacto****************/
-.titulo__cot {
-    text-align:center;
-   font-size: 2rem ;
-   font-family: 'Alfa Slab One', cursive;
-}
-form {
-    padding: 3rem;
-
-}
-/**************Nuestra Empresa*********************/
-.fotos {
-    display: flex;
- 
-    
-}
-.nuestra__titulo {
-    text-align:center;
-    font-size: 2rem ;
-    padding-top: 2rem;
-    font-family: 'Alfa Slab One', cursive;
-}
-.nuestra__desc {
-    text-align:center;
-    font-size: 1rem ;
-    padding: 2rem;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.foto {
-width: 500px;
-display: inline-block;
-background-color: rgba(230, 90, 25, 0.349);
-border: 2px solid rgb(170, 9, 9);
-padding: 10px;    
-
-border-radius: 10px;
-
-margin: 20px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    color: red;
 
 }
 
-.foto__img {
-
+/*************************************Servicio 24 y celular*****************************/
+.portada__texto {
     width: 100%;
-}
-/*****************Trasladamos**********************/
-.productos__titulo{
-    text-align:center;
-    font-size: 2rem ;
-    padding-top: 2rem;
-    font-family: 'Alfa Slab One', cursive;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(221, 25, 25);
+    background-color: rgba(212, 196, 196, 0.753);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: 'Fredoka One', cursive;
 
 }
 
-.trasladamos{
+/***********************************************grilla************************************/
 
-    text-align:center;
-    font-size: 2rem ;
-    padding-top: 2rem;
+.trasladamos {
+
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 6rem;
     font-family: 'Alfa Slab One', cursive;
-    
     height: 400px;
-    background-color: rgba(230, 90, 25, 0.349);
     border: 2px solid rgb(0, 0, 0);
-    padding: 10px;    
+    padding: 10px;
     border-radius: 10px;
     margin-inline: 10px;
     margin-top: 40px;
@@ -288,35 +116,36 @@ margin: 20px;
 
 }
 
+
 .grid {
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "item1 item2 item3"
-    "item4 item5 item6" ;
+    grid-template-areas:
+        "item1 item2 item3"
+        "item4 item5 item6";
     gap: 1rem;
 }
 
-.grid_item{
+.grid_item {
 
-    background-size:cover;
-    background-position: center center ;
+    background-size: cover;
+    background-position: center center;
     padding: 2rem;
     background-repeat: no-repeat;
     border: solid rgb(20, 20, 20);
     box-shadow: 1px 8px 8px;
     border-radius: 20px;
     height: 150px;
-    
+
 }
+
 .grid_item1 {
     grid-area: item1;
     background-image: url(../img/trasimg/auto.png);
-    
-     
 }
+
 .grid_item2 {
     grid-area: item2;
     background-image: url(../img/trasimg/autocomp.png);
@@ -331,27 +160,688 @@ margin: 20px;
     grid-area: item4;
     background-image: url(../img/trasimg/camioneta.png);
 }
+
 .grid_item5 {
     grid-area: item5;
     background-image: url(../img/trasimg/moto-electrica-de-pista-shadow-kw-motors-foto-transparente-min-e1538967358902.png);
 }
+
 .grid_item6 {
     grid-area: item6;
     background-image: url(../img/trasimg/tractor.png);
 }
 
+/****************************************ubicacion**************************************/
+.ubicacion__title {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 6rem;
+    font-family: 'Alfa Slab One', cursive;
+    height: 500px;
+    background-color: rgbargb(129, 123, 123);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    margin-inline: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.ubicacion__mapa {
+    width: 90%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    border: solid rgb(20, 20, 20);
+    box-shadow: 1px 8px 8px;
+    border-radius: 20px;
+
+}
+
+/*********************************************FOOTER*************************************/
+/****************************************************************************************/
+footer {
+    background: rgb(39, 41, 42);
+    background: linear-gradient(340deg, rgba(39, 41, 42, 1) 3%, rgba(88, 135, 172, 1) 51%, rgba(168, 21, 51, 1) 100%);
+    padding-top: 2rem;
+    ;
+    justify-content: space-between;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(3, 3, 3);
+    padding: 1rem;
+}
+
+.footer__top p {
+    text-align: center;
+}
+
+.redes__title {
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+.redes__iconos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 10px;
+}
+
+.redes__iconos i {
+    font-size: 2rem;
+    color: rgb(10, 10, 10);
+
+}
+
+
+/***************************************TRASLADAMOS*********************************/
+/***********************************************************************************/
 
 
 
+.productos__titulo {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+    font-family: 'Alfa Slab One', cursive;
 
-/*
-@media screen and (min-width: 350px){
+}
 
-.footer{
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+}
+
+.card {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-between;
     align-items: center;
-}/*
 
+    border: solid 2px rgb(10, 10, 10);
+    min-width: 400px;
+    max-width: 500px;
+    height: 30 0px;
+
+    /*sombra a la tarj*/
+    box-shadow: 1px 8px 8px rgb(192, 43, 135);
+
+    border-radius: 10px;
+    /*la img pasa el borde de su contenedor*/
+    overflow: hidden;
+
+
+}
+
+.card__img {
+
+    width: 100%;
+    padding: 1rem;
+
+    border-radius: 2rem;
+
+
+}
+
+.card__titulo {
+    padding: 1rem 0rem 1rem 0rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.card__parrafo {
+    margin: 2rem;
+    font-size: 20px;
+
+}
+
+/***********************************VENTAS.HTML***********************************/
+/***********************************************************************************/
+
+
+.main__ventas {
+
+    background-image: url(/img/ventas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: blue;
+    height: 80vh;
+    padding: 2rem;
+}
+
+.header__titulo {
+
+
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+    color: rgb(238, 14, 14);
+
+}
+
+.tabla__ventas {
+    background-color: rgba(235, 231, 12, 0.603);
+    border: 1px solid rgb(44, 12, 224);
+    width: 100%;
+}
+
+th,
+td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+
+
+}
+
+
+
+/********************************NUESTRAEMPRESA.HTML********************************/
+/***********************************************************************************/
+
+.nuestra {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nuestra__titulo {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.nuestra__desc {
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/**************Grilla***************/
+
+
+.grid_sect {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "item1 item2 "
+        "item3 item4 "
+        "item5 item6 "
+        ;
+    gap: 1rem;
+}
+
+.grid__item {
+
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    border: solid rgb(20, 20, 20);
+    box-shadow: 1px 8px 8px;
+    border-radius: 20px;
+    height: 300px;
+    
+
+}
+
+
+.grid__item1 {
+    grid-area: item1;
+    background-image: url(../img/imgnuestraempresa/193fc972-5f92-4dc1-8efb-460595f9a502.jfif);
+}
+
+.grid__item2 {
+    grid-area: item2;
+    background-image: url(../img/imgnuestraempresa/4257c5c9-c43c-46b4-a394-f9f58c5f8996.jfif);
+}
+
+.grid__item3 {
+    grid-area: item3;
+    background-image: url(../img/imgnuestraempresa/6d17a9c9-af7a-4bd7-9b6b-e4f879898282.jfif);
+}
+
+.grid__item4 {
+    grid-area: item4;
+    background-image: url(../img/imgnuestraempresa/7c9284f7-de3e-4798-8c41-c2d4be997e04.jfif);
+}
+
+.grid__item5 {
+    grid-area: item5;
+    background-image: url(../img/imgnuestraempresa/c2f12d4b-bb29-4b3d-bbd9-37e185def8bc.jfif);
+}
+
+.grid__item6 {
+    grid-area: item6;
+    background-image: url(../img/imgnuestraempresa/b326bd7e-c7c7-4d05-b7eb-54c42b3ff2cd.jfif);
+}
+
+
+
+
+.foto__img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+
+
+/********************************CONTACTO.HTML********************************/
+/***********************************************************************************/
+.titulo__cot {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+form {
+    padding: 3rem;
+
+}
+
+
+
+
+
+/*************************************ANIMACIONES********************************/
+/****************************************INDEX***********************************/
+
+/**************logo****************/
+
+.navbar,
+.footer__top {
+
+    -webkit-animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+}
+
+@-webkit-keyframes rotate-hor-center {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+
+    100% {
+        -webkit-transform: rotateX(-360deg);
+        transform: rotateX(-360deg);
+    }
+}
+
+@keyframes rotate-hor-center {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+
+    100% {
+        -webkit-transform: rotateX(-360deg);
+        transform: rotateX(-360deg);
+    }
+}
+
+/**************Nav****************/
+.nav-item:hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1) translatex(-10px);
+    border-radius: 20px;
+
+    box-shadow: rgba(170, 169, 169, 0.521) 5px 5px, rgba(8, 7, 7, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(151, 55, 116, 0.1) 20px 20px, rgba(223, 14, 146, 0.05) 25px 25px;
+
+}
+
+.nav-item {
+    transition: transform 1s;
+}
+
+.logo,
+.nav__titulo {
+    animation-name: colores;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes colores {
+    20% {
+        color: rgb(248, 97, 9);
+    }
+
+    40% {
+        color: rgb(164, 185, 45);
+    }
+
+    60% {
+        color: rgb(39, 10, 204);
+    }
+
+    80% {
+        color: rgb(231, 45, 12);
+    }
+
+    100% {
+        color: rgb(204, 10, 146);
+    }
+}
+
+/*************Portada****************/
+
+.portada__titulo {
+    -webkit-animation: roll-in-left .6s ease-out both;
+    animation: roll-in-left .6s ease-out both;
+    animation-delay: 1.5s;
+}
+
+@-webkit-keyframes roll-in-left {
+    0% {
+        -webkit-transform: translateX(-800px) rotate(-540deg);
+        transform: translateX(-800px) rotate(-540deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1
+    }
+}
+
+@keyframes roll-in-left {
+    0% {
+        -webkit-transform: translateX(-800px) rotate(-540deg);
+        transform: translateX(-800px) rotate(-540deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1
+    }
+}
+
+
+.portada__texto h2 {
+
+    -webkit-animation: rotate-scale-up 0.65s linear both;
+    animation: rotate-scale-up 0.65s linear both;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes rotate-scale-up {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+
+/*************************Trasladamos********************/
+.grid_item1 {
+    -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation-delay: 4s;
+
+}
+
+.grid_item2 {
+    -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation-delay: 4.2s;
+
+}
+
+.grid_item3 {
+    -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation-delay: 4.4s;
+
+}
+
+.grid_item4 {
+    -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation-delay: 4.6s;
+
+}
+
+.grid_item5 {
+    -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation-delay: 4.8s;
+
+}
+
+.grid_item6 {
+    -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation-delay: 5s;
+
+}
+
+@-webkit-keyframes roll-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) rotate(-720deg);
+        transform: translateX(-1000px) rotate(-720deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+.trasladamos {
+    transition: transform 1s;
+
+}
+
+.trasladamos:hover {
+    transform: scale(1.1) translatey(-30px);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+
+/*************************ubicacion********************/
+
+.ubicacion__mapa {
+    transition: transform 1s;
+
+}
+
+.ubicacion__mapa:hover {
+    transform: scale(1.1) translatey(30px);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+
+
+/*************************************ANIMACIONES********************************/
+/**********************************TRASLADAMOS.HTML***********************************/
+.card:hover {
+    transform: scale(1.1) translatey(-30px);
+
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.card {
+    transition: transform 1s;
+}
+
+/*************************************ANIMACIONES********************************/
+/**********************************NUESTRAEMPRESA.HTML***********************************/
+
+.grid__item:hover {
+    transform: scale(1.1) translatey(-30px);
+
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.grid__item {
+    transition: transform 1s;
+}
+
+/****************************************MEDIAQUERIS*************************************/
+/*********************INDEX********************/
+
+
+@media screen and (max-width: 375px) {
+
+    .nav__titulo,
+    .nav__titulo i {
+        animation-name: none;
+        color: white;
+        font-style: italic;
+        font-size: 1.2rem;
+
+    }
+
+    .button {
+        border-color: white;
+    }
+
+    .portada__texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .trasladamos:hover,
+    .ubicacion__mapa:hover {
+        transform: none;
+        box-shadow: none;
+
+
+    }
+
+
+    .trasladamos {
+        height: 570px;
+    }
+
+    .ubicacion__title {
+        font-size: 1.5rem;
+
+
+    }
+
+    .footer__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portada {
+        background-image: url(../img/camionchiquito.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 300px;
+        background-color: white;
+    }
+
+    /********************TRASLADAMOS.HTML********************/
+
+    .cards {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .card {
+
+        align-items: center;
+
+        border: solid 2px rgb(10, 10, 10);
+        min-width: 350px;
+        max-width: none;
+
+
+
+        /*sombra a la tarj*/
+        box-shadow: none;
+
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        transform: none;
+        box-shadow: none
+    }
+
+    /**************************NUESTRAEMPRESA.HTML***********************************************/
+
+
+    .grid {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "item1 item2 "
+            "item3 item4 "
+            "item5 item6 ";
+        gap: 1rem;
+    }
+    .grid_sect{
+        display: flex;
+        flex-direction: column;
+    }      
+
+    .grid__item:hover{
+        transform: none;
+        box-shadow: none;   
+     
+    }
+      
+   
 }
