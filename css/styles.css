@@ -7,16 +7,13 @@
     box-sizing: border-box;
 
 }
-
 ul,
 ol {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 body {
     background-color: rgb(129, 123, 123);
 }
@@ -24,49 +21,52 @@ body {
 /*********************************************INDEX*************************************/
 /***************************************************************************************/
 
-/****************************************Barra de Navegacion****************************/
+/****************Barra de Navegacion**********************/
 
+.main__ind{
+    background: rgb(39,41,42);
+    background: linear-gradient(100deg, rgba(39,41,42,0.571848807882528) 0%, rgba(168,21,51,1) 100%); 
 
+}
+.navbar-toggler {
+    background-color: white;
+}
+.navbar-toggler {
+    background-color: white;
+}
 .nav__titulo {
     font-size: 1rem;
     font-family: 'Alfa Slab One', cursive;
-
 }
-
+.nav-link.active {
+    background-color: aliceblue;
+    border-radius: 1rem;
+}
 .logo {
     color: aliceblue;
     padding-left: 1rem;
-
 }
-
 .navbar {
     padding: 1.5rem;
 }
-
 .nav-item {
     margin-right: 20px;
     margin-left: 10px;
     text-align: center;
     display: inline-block;
-
 }
-
 .nav-item a {
     color: aliceblue;
 }
-
 main {
     padding: 40px;
 }
-
 .container {
     display: flex;
     justify-content: flex-end;
 }
 
-
-
-/******************************************Titulo portada********************************/
+/***********************Titulo portada*********************/
 .portada {
     display: flex;
     flex-direction: column;
@@ -76,7 +76,6 @@ main {
     background-size: cover;
     height: 100vh;
 }
-
 .portada__titulo {
     padding: 2rem;
     font-family: 'Fredoka One', cursive;
@@ -85,7 +84,7 @@ main {
 
 }
 
-/*************************************Servicio 24 y celular*****************************/
+/************Servicio 24 y celular*************************/
 .portada__texto {
     width: 100%;
     display: flex;
@@ -98,10 +97,9 @@ main {
 
 }
 
-/***********************************************grilla************************************/
+/********************************grilla************************************/
 
 .trasladamos {
-
     text-align: center;
     font-size: 2rem;
     padding-top: 6rem;
@@ -115,10 +113,7 @@ main {
     margin-left: 20px;
 
 }
-
-
 .grid {
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -127,9 +122,7 @@ main {
         "item4 item5 item6";
     gap: 1rem;
 }
-
 .grid_item {
-
     background-size: cover;
     background-position: center center;
     padding: 2rem;
@@ -140,38 +133,32 @@ main {
     height: 150px;
 
 }
-
 .grid_item1 {
     grid-area: item1;
     background-image: url(../img/trasimg/auto.png);
 }
-
 .grid_item2 {
     grid-area: item2;
     background-image: url(../img/trasimg/autocomp.png);
 }
-
 .grid_item3 {
     grid-area: item3;
     background-image: url(../img/trasimg/barcos.png);
 }
-
 .grid_item4 {
     grid-area: item4;
     background-image: url(../img/trasimg/camioneta.png);
 }
-
 .grid_item5 {
     grid-area: item5;
     background-image: url(../img/trasimg/moto-electrica-de-pista-shadow-kw-motors-foto-transparente-min-e1538967358902.png);
 }
-
 .grid_item6 {
     grid-area: item6;
     background-image: url(../img/trasimg/tractor.png);
 }
 
-/****************************************ubicacion**************************************/
+/**************************ubicacion*******************************/
 .ubicacion__title {
     text-align: center;
     font-size: 2rem;
@@ -188,10 +175,9 @@ main {
     padding-top: 1rem;
     padding-bottom: 1.5rem;
 }
-
 .ubicacion__mapa {
     width: 90%;
-    height: 40vh;
+    height: 400px;
     background-repeat: no-repeat;
     border: solid rgb(20, 20, 20);
     box-shadow: 1px 8px 8px;
@@ -199,8 +185,8 @@ main {
 
 }
 
-/*********************************************FOOTER*************************************/
-/****************************************************************************************/
+/*********************************************FOOTER***********************************************/
+/*************************************************************************************************/
 footer {
     background: rgb(39, 41, 42);
     background: linear-gradient(340deg, rgba(39, 41, 42, 1) 3%, rgba(88, 135, 172, 1) 51%, rgba(168, 21, 51, 1) 100%);
@@ -208,31 +194,28 @@ footer {
     ;
     justify-content: space-between;
 }
-
 .footer__top {
     display: flex;
     justify-content: space-between;
     color: rgb(3, 3, 3);
-    padding: 1rem;
+    padding: 4rem;
 }
 
 .footer__top p {
     text-align: center;
-}
 
+}
 .redes__title {
     text-align: center;
     font-size: 1.2rem;
 
 }
-
 .redes__iconos {
     display: flex;
     justify-content: center;
     gap: 40px;
     padding-top: 10px;
 }
-
 .redes__iconos i {
     font-size: 2rem;
     color: rgb(10, 10, 10);
@@ -240,57 +223,47 @@ footer {
 }
 
 
-/***************************************TRASLADAMOS*********************************/
+/***************************************TRASLADAMOS.HTML*********************************/
 /***********************************************************************************/
-
-
-
+.main_trasl{
+    background: rgb(39,41,42);
+    background: linear-gradient(100deg, rgba(39,41,42,0.571848807882528) 0%, rgba(168,21,51,1) 100%); 
+}
 .productos__titulo {
     text-align: center;
     font-size: 2rem;
     padding-top: 2rem;
     font-family: 'Alfa Slab One', cursive;
+    color: white;
 
 }
-
 .cards {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 15px;
+    
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
-
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
     border: solid 2px rgb(10, 10, 10);
-    min-width: 400px;
-    max-width: 500px;
+    width: 700px;
     height: 30 0px;
-
-    /*sombra a la tarj*/
     box-shadow: 1px 8px 8px rgb(192, 43, 135);
-
     border-radius: 10px;
-    /*la img pasa el borde de su contenedor*/
     overflow: hidden;
 
-
 }
-
 .card__img {
-
     width: 100%;
     padding: 1rem;
-
     border-radius: 2rem;
 
-
 }
-
 .card__titulo {
     padding: 1rem 0rem 1rem 0rem;
     text-align: center;
@@ -298,9 +271,7 @@ footer {
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-
 }
-
 .card__parrafo {
     margin: 2rem;
     font-size: 20px;
@@ -309,148 +280,134 @@ footer {
 
 /***********************************VENTAS.HTML***********************************/
 /***********************************************************************************/
-
-
 .main__ventas {
-
     background-image: url(/img/ventas.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: blue;
-    height: 80vh;
+    background: rgb(39,41,42);
+    background: linear-gradient(100deg, rgba(39,41,42,0.571848807882528) 0%, rgba(168,21,51,1) 100%);    
     padding: 2rem;
+
 }
-
 .header__titulo {
-
-
     text-align: center;
     font-size: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-family: 'Alfa Slab One', cursive;
-    color: rgb(238, 14, 14);
+    color: rgb(253, 253, 253);
 
 }
-
 .tabla__ventas {
-    background-color: rgba(235, 231, 12, 0.603);
-    border: 1px solid rgb(44, 12, 224);
-    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
 }
-
-th,
-td {
+th {
     width: 25%;
-    text-align: left;
+    text-align: center;
     vertical-align: top;
     border: 1px solid #000;
 
-
 }
-
-
 
 /********************************NUESTRAEMPRESA.HTML********************************/
 /***********************************************************************************/
+.main__nuestra{
+    background: rgb(39,41,42);
+    background: linear-gradient(100deg, rgba(39,41,42,0.571848807882528) 0%, rgba(168,21,51,1) 100%);    
 
+}
 .nuestra {
     display: flex;
     flex-direction: column;
 
 }
-
 .nuestra__titulo {
     text-align: center;
     font-size: 2rem;
     padding-top: 2rem;
     font-family: 'Alfa Slab One', cursive;
 }
-
+.nuestra__texto {
+    color: white;
+}
 .nuestra__desc {
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/**************Grilla***************/
-
+/*************************Grilla**************************/
 
 .grid_sect {
-
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
         "item1 item2 "
         "item3 item4 "
         "item5 item6 "
-        ;
+    ;
     gap: 1rem;
+    padding-bottom: 3rem;
 }
 
 .grid__item {
-
     background-size: cover;
     background-position: center center;
     padding: 2rem;
     background-repeat: no-repeat;
-    border: solid rgb(20, 20, 20);
+    border: solid rgb(255, 255, 255);
     box-shadow: 1px 8px 8px;
     border-radius: 20px;
     height: 300px;
-    
+
+
 
 }
-
 
 .grid__item1 {
     grid-area: item1;
     background-image: url(../img/imgnuestraempresa/193fc972-5f92-4dc1-8efb-460595f9a502.jfif);
 }
-
 .grid__item2 {
     grid-area: item2;
     background-image: url(../img/imgnuestraempresa/4257c5c9-c43c-46b4-a394-f9f58c5f8996.jfif);
 }
-
 .grid__item3 {
     grid-area: item3;
     background-image: url(../img/imgnuestraempresa/6d17a9c9-af7a-4bd7-9b6b-e4f879898282.jfif);
 }
-
 .grid__item4 {
     grid-area: item4;
     background-image: url(../img/imgnuestraempresa/7c9284f7-de3e-4798-8c41-c2d4be997e04.jfif);
 }
-
 .grid__item5 {
     grid-area: item5;
     background-image: url(../img/imgnuestraempresa/c2f12d4b-bb29-4b3d-bbd9-37e185def8bc.jfif);
 }
-
 .grid__item6 {
     grid-area: item6;
     background-image: url(../img/imgnuestraempresa/b326bd7e-c7c7-4d05-b7eb-54c42b3ff2cd.jfif);
 }
 
-
-
-
 .foto__img {
     border-radius: 10px;
     width: 100%;
+
 }
 
-
-
-
-/********************************CONTACTO.HTML********************************/
+/********************************CONTACTO.HTML**************************************/
 /***********************************************************************************/
+.main__cont{
+    background: rgb(39,41,42);
+    background: linear-gradient(100deg, rgba(39,41,42,0.571848807882528) 0%, rgba(168,21,51,1) 100%); 
+}
 .titulo__cot {
     text-align: center;
     font-size: 2rem;
     font-family: 'Alfa Slab One', cursive;
+    color:white;
 }
 
 form {
@@ -459,11 +416,8 @@ form {
 }
 
 
-
-
-
-/*************************************ANIMACIONES********************************/
-/****************************************INDEX***********************************/
+                    /*************************************SECCION ANIMACIONES********************************/
+                        /****************************************INDEX.HTML*******************************/
 
 /**************logo****************/
 
@@ -583,7 +537,6 @@ form {
     }
 }
 
-
 .portada__texto h2 {
 
     -webkit-animation: rotate-scale-up 0.65s linear both;
@@ -608,7 +561,6 @@ form {
         transform: scale(1) rotateZ(360deg);
     }
 }
-
 
 /*************************Trasladamos********************/
 .grid_item1 {
@@ -683,7 +635,6 @@ form {
 }
 
 /*************************ubicacion********************/
-
 .ubicacion__mapa {
     transition: transform 1s;
 
@@ -695,9 +646,8 @@ form {
 
 }
 
-
-/*************************************ANIMACIONES********************************/
-/**********************************TRASLADAMOS.HTML***********************************/
+                        /*************************************SECCION ANIMACIONES********************************/
+                            /**********************************TRASLADAMOS.HTML***********************************/
 .card:hover {
     transform: scale(1.1) translatey(-30px);
 
@@ -708,8 +658,8 @@ form {
     transition: transform 1s;
 }
 
-/*************************************ANIMACIONES********************************/
-/**********************************NUESTRAEMPRESA.HTML***********************************/
+                            /*************************************SECCION ANIMACIONES********************************/
+                                /*****************************NUESTRAEMPRESA.HTML***********************/
 
 .grid__item:hover {
     transform: scale(1.1) translatey(-30px);
@@ -721,9 +671,8 @@ form {
     transition: transform 1s;
 }
 
-/****************************************MEDIAQUERIS*************************************/
-/*********************INDEX********************/
-
+/****************************************SECCION MEDIAQUERIS 375px*************************************/
+                            /*********************INDEX.HTML********************/
 
 @media screen and (max-width: 375px) {
 
@@ -758,20 +707,15 @@ form {
         transform: none;
         box-shadow: none;
 
-
     }
-
-
     .trasladamos {
         height: 570px;
     }
-
     .ubicacion__title {
         font-size: 1.5rem;
 
 
     }
-
     .footer__top {
         display: flex;
         flex-direction: column;
@@ -786,7 +730,8 @@ form {
         background-color: white;
     }
 
-    /********************TRASLADAMOS.HTML********************/
+/****************************************SECCION MEDIAQUERIS 375px*************************************/
+                            /*********************TRASLADAMOS.HTML********************/
 
     .cards {
 
@@ -795,20 +740,11 @@ form {
         align-items: center;
 
     }
-
     .card {
-
         align-items: center;
-
         border: solid 2px rgb(10, 10, 10);
-        min-width: 350px;
-        max-width: none;
-
-
-
-        /*sombra a la tarj*/
+        width: 350px;
         box-shadow: none;
-
         border-radius: 10px;
         overflow: hidden;
     }
@@ -818,30 +754,32 @@ form {
         box-shadow: none
     }
 
-    /**************************NUESTRAEMPRESA.HTML***********************************************/
-
-
-    .grid {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "item1 item2 "
-            "item3 item4 "
-            "item5 item6 ";
-        gap: 1rem;
-    }
-    .grid_sect{
+                     /*************************NUESTRAEMPRESA.HTML****************************/
+    .grid_sect {
         display: flex;
         flex-direction: column;
-    }      
-
-    .grid__item:hover{
-        transform: none;
-        box-shadow: none;   
-     
     }
-      
-   
+    .grid__item:hover {
+        transform: none;
+        box-shadow: none;
+
+    }
+    .nuestra__desc{
+        font-size: 1.2rem;
+    }
 }
+
+/****************************************MEDIAQUERIS 1200PX*************************************/
+                    /*************************INDEX.HTML********************/
+@media screen and (max-width: 1200px) {
+    .portada {
+        height: 50VH;
+        background-color: white;
+
+               /*********************NUESTRAEMPRESA.HTML********************/
+        .card {
+
+            max-width: 500px;
+        }
+
+    }
