@@ -51,25 +51,21 @@
         </nav>
 
     </header>
-
-
-    <main>
+    <main class="main__cont">
 
         <section>
-            
-
-           <form method="POST" action="/index.php" class="needs-validation" novalidate>
-            <h2 class="titulo__cot">Complete el formulario</h2>
+            <form method="POST" action="/index.php" class="needs-validation" novalidate>
+                <h2 class="titulo__cot">Complete el formulario</h2>
                 <div class="form-row mt-5">
                     <div class="col-md-4 mb-3">
-                        <label for="validarNombre">Nombre:<span class="red">*</span></label>
+                        <label for="dato validarNombre">Nombre:<span class="red">*</span></label>
                         <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
-                        <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
+                        <label for="dato validarApellidos">Apellidos:<span class="red">*</span></label>
                         <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
                     </div>
                 </div>
@@ -94,9 +90,9 @@
                         <label for="validarTema">Tema:<span class="red">*</span></label>
                         <select class="custom-select" id="validarTema" name="validarTema" required>
                             <option selected disabled value="">Selecciona...</option>
-                            <option value="Problema con acceso a Web">Problema con acceso a Web</option>
-                            <option value="Propuesta de colaboración">Propuesta de colaboración</option>
-                            <option value="Eliminar mi usuario de la Web">Eliminar mi usuario de la Web</option>
+                            <option value="Problema con acceso a Web">Cotizaciones</option>
+                            <option value="Propuesta de colaboración">Solicitud de Servicios</option>
+                            <option value="Eliminar mi usuario de la Web">Ventas</option>
                             <option value="Otras cuestiones">Otras cuestiones</option>
                         </select>
                     </div>
