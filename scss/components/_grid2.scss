@@ -1,0 +1,61 @@
+.grid_sect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "item1 item2 "
+        "item3 item4 "
+        "item5 item6 "
+    ;
+    gap: 1rem;
+    padding-bottom: 3rem;
+
+    .grid__item {
+        background-size: cover;
+        background-position: center center;
+        padding: 2rem;
+        background-repeat: no-repeat;
+        border: $color_2;
+        box-shadow: 1px 8px 8px;
+        border-radius: 20px;
+        height: 400px;
+     
+        transition: transform 1s;
+        &:hover {
+            @include hovercolor2;
+        }
+        
+
+        &.grid__item1 {
+            grid-area: item1;
+            background-image: url(../img/trasimg/camion1.png);
+
+
+        }
+
+       &.grid__item2 {
+            grid-area: item2;
+            background-image: url(../img/trasimg/camion2.jfif);
+        }
+
+        &.grid__item3 {
+            grid-area: item3;
+            background-image: url(../img/trasimg/camion3.jfif);
+        }
+
+        &.grid__item4 {
+            grid-area: item4;
+            background-image: url(../img/trasimg/camion4.jfif);
+        }
+
+        &.grid__item5 {
+            grid-area: item5;
+            background-image: url(../img/trasimg/camion5.jfif);
+        }
+
+        &.grid__item6 {
+            grid-area: item6;
+            background-image: url(../img/trasimg/camion6.jfif);
+        }
+    }
+}

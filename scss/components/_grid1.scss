@@ -1,0 +1,112 @@
+.trasladamos {
+    text-align: center;
+    font-size: 2rem;
+    
+    font-family:$font-family_1;
+   
+    border: 2px $color_4;
+    padding: 10px;
+    border-radius: 10px;
+    margin-inline: 10px;
+    margin-left: 20px;
+    height: 100%;
+   
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "item1 item2 item3"
+            "item4 item5 item6";
+        gap: 1rem;
+        @include borderboxradio;
+        transition: transform 1s;
+        &:hover {
+            
+            @include hovercolor1;
+    
+        }
+      
+   
+
+        .grid_item {
+            background-size: cover;
+            background-position: center center;
+            padding: 2rem;
+            background-repeat: no-repeat;
+            box-shadow: 1px 8px 8px;
+            border-radius: 20px;
+            height: 150px;
+           
+
+                        
+       
+            &.grid_item1 {
+                grid-area: item1;
+                background-image: url(/img/trasimg/auto.png);
+                -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation-delay: 4s;
+            }
+            &.grid_item2 {
+                grid-area: item2;
+                background-image: url(/img/trasimg/autocomp.png);
+                -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation-delay: 4.2s;
+            }
+            &.grid_item3 {
+                grid-area: item3;
+                background-image: url(/img/trasimg/barcos.png);
+                -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation-delay: 4.4s;
+            }
+            &.grid_item4 {
+                grid-area: item4;
+                background-image: url(/img/trasimg/camioneta.png);
+                -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation-delay: 4.6s;
+            }
+            &.grid_item5 {
+                grid-area: item5;
+                background-image: url(../img/trasimg/moto-electrica-de-pista-shadow-kw-motors-foto-transparente-min-e1538967358902.png);
+                -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation-delay: 4.8s;
+            }
+            &.grid_item6 {
+                grid-area: item6;
+                background-image: url(../img/trasimg/tractor.png);
+                -webkit-animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation: roll-in-blurred-left .65s cubic-bezier(.23, 1.000, .32, 1.000) both;
+                animation-delay: 5s;
+
+                }
+
+                @-webkit-keyframes roll-in-blurred-left {
+                    0% {
+                        -webkit-transform: translateX(-1000px) rotate(-720deg);
+                        -webkit-transform: translateX(-1000px) rotate(-720deg);
+                        -webkit-filter: blur(50px);
+                        filter: blur(50px);
+                        opacity: 0
+                    }
+                
+                    100% {
+                        -webkit-transform: translateX(0) rotate(0deg);
+                        -webkit-transform: translateX(0) rotate(0deg);
+                        -webkit-filter: blur(0);
+                        filter: blur(0);
+                        opacity: 1
+                    }
+                }
+                
+            }
+
+          
+        
+        }
+ }
+ 

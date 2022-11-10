@@ -1,0 +1,32 @@
+@mixin flexcolcent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin borderboxradio{
+    border: solid rgb(20, 20, 20);
+    box-shadow: 1px 8px 8px;
+    border-radius: 20px;
+}
+
+@mixin gradient{
+    background: rgb(39,41,42);
+    background: linear-gradient(100deg, rgba(39,41,42,0.571848807882528) 0%, rgba(168,21,51,1) 100%); 
+
+}
+@mixin gradients2{
+    background: rgb(39, 41, 42);
+    background: linear-gradient(340deg, rgba(39, 41, 42, 1) 3%, rgba(88, 135, 172, 1) 51%, rgba(168, 21, 51, 1) 100%);
+
+}
+
+@mixin hovercolor1{
+    transform: scale(1.1) translatey(5px);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+@mixin hovercolor2{
+    transform: scale(1.1) translatey(-30px);
+        
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+}

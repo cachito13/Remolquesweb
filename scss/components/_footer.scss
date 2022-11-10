@@ -1,0 +1,64 @@
+/*********************************************FOOTER***********************************************/
+/*************************************************************************************************/
+footer {
+    padding-top: 2rem;
+    @include gradients2;
+    justify-content: space-between;
+    .footer__top {
+        display: flex;
+        justify-content: space-between;
+        color: $color_4;
+        padding: 4rem;
+        .footer__top p {
+            text-align: center;
+        
+        }
+    }
+
+        -webkit-animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    @-webkit-keyframes rotate-hor-center {
+        0% {
+            -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+        }
+    
+        100% {
+            -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+        }
+    }
+    
+    @keyframes rotate-hor-center {
+        0% {
+            -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+        }
+    
+        100% {
+            -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+        }
+    }
+ 
+}
+
+.redes{
+    .redes__title {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .redes__iconos {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 10px;
+        font-size: 2rem;
+        color: rgb(10, 10, 10);
+    
+     }
+
+}

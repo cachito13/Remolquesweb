@@ -1,0 +1,27 @@
+.main__ventas {
+    background-image: url(/img/ventas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    @include gradient;
+    padding: 2rem;
+    .header__titulo {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 1rem;
+        font-family: $font-family_1;
+        color: $color_1;
+    
+    }
+    .tabla__ventas {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+        th {
+            width: 25%;
+            text-align: center;
+            vertical-align: top;
+            border: 1px solid #000;
+        
+        }
+    }
+
+}

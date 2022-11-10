@@ -1,0 +1,59 @@
+.main_trasl {
+  @include gradient;
+    .productos {
+    .productos__titulo {
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 2rem;
+      font-family: "Alfa Slab One", cursive;
+      color: $color_2;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+                padding-top: 3rem;
+        padding-bottom: 3rem;
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: solid 2px rgb(10, 10, 10);
+            width: 700px;
+            height: 30 0px;
+            box-shadow: 1px 8px 8px rgb(192, 43, 135);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 1s;
+            &:hover{
+                transform: scale(1.1) translatey(-30px);
+                box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+            
+            }
+            .card__img {
+                width: 100%;
+                padding: 1rem;
+                border-radius: 2rem;
+            
+            }
+            .card__titulo {
+                padding: 1rem 0rem 1rem 0rem;
+                text-align: center;
+                padding: 1rem;
+                font-size: 20px;
+                font-family: $font-family_3;            
+            }
+            .card__parrafo {
+                margin: 2rem;
+                font-size: 20px;
+            
+            }
+        
+        }
+    }
+   
+
+  }
+}

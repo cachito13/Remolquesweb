@@ -1,0 +1,19 @@
+@import "./base/reset";
+@import "./base/tipografias";
+@import "./utils/mixin";
+
+
+@import "./components/nav";
+@import "./components/footer";
+@import "./components/grid1";
+@import "./components/grid2";
+@import "./components/media";
+
+
+
+@import "./page/index";
+@import "./page/trasladamos";
+@import "./page/ventas";
+@import "./page/nuestraempresa";
+@import "./page/contacto";
+

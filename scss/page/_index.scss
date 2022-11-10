@@ -1,0 +1,128 @@
+
+
+/***********************Titulo portada*********************/
+.portada {
+    @include flexcolcent;
+    background-image: url(/img/camiondib1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 150vh;
+    .portada__titulo {
+        -webkit-animation: roll-in-left .6s ease-out both;
+        animation: roll-in-left .6s ease-out both;
+        animation-delay: 1.5s;
+    }
+    
+    @-webkit-keyframes roll-in-left {
+        0% {
+            -webkit-transform: translateX(-800px) rotate(-540deg);
+            transform: translateX(-800px) rotate(-540deg);
+            opacity: 0
+        }
+    
+        100% {
+            -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+            opacity: 1
+        }
+    }
+    
+    @keyframes roll-in-left {
+        0% {
+            -webkit-transform: translateX(-800px) rotate(-540deg);
+            transform: translateX(-800px) rotate(-540deg);
+            opacity: 0
+        }
+    
+        100% {
+            -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+            opacity: 1
+        }
+    }
+    .portada__titulo {
+        padding: 2rem;
+        font-family: $font-family_1;
+        font-size: 2rem;
+        color: $color_1;
+    
+    }
+    .portada__texto {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: $color_1;
+        background-color: $background-color_1;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        font-family: $font-family_2;
+        
+
+       .texto,.tel
+        {
+
+            -webkit-animation: rotate-scale-up 0.65s linear both;
+            animation: rotate-scale-up 0.65s linear both;
+            animation-delay: 2.5s;
+            animation-iteration-count: 1;
+        }
+        
+           @-webkit-keyframes rotate-scale-up {
+            0% {
+                -webkit-transform: scale(1) rotateZ(0);
+                transform: scale(1) rotateZ(0);
+            }
+        
+            50% {
+                -webkit-transform: scale(2) rotateZ(180deg);
+                transform: scale(2) rotateZ(180deg);
+            }
+        
+            100% {
+                -webkit-transform: scale(1) rotateZ(360deg);
+                transform: scale(1) rotateZ(360deg);
+            }
+        }
+ 
+    }
+}
+   
+
+
+
+
+/**************************ubicacion*******************************/
+
+
+.ubicacion__title {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 6rem;
+    font-family: $font-family_3;
+    height: 500px;
+    background-color: $background-color_1;
+
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+
+    margin-inline: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  
+}
+.ubicacion__mapa {
+    width: 90%;
+    height: 400px;
+    background-repeat: no-repeat;
+
+    @include borderboxradio;
+
+    transition: transform 1s;
+    &:hover {
+        @include hovercolor1;
+    
+    }
+}

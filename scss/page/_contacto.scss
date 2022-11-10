@@ -1,0 +1,13 @@
+.main__cont{
+   @include gradient;
+    .titulo__cot {
+        text-align: center;
+        font-size: 2rem;
+        font-family: $font-family_1;
+        color:$color_2;
+        form {
+            padding: 3rem;
+        
+        }
+    }
+}
