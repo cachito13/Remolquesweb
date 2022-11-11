@@ -258,7 +258,7 @@ footer .footer__top .footer__top p {
 }
 .trasladamos .grid .grid_item.grid_item1 {
   grid-area: item1;
-  background-image: url(/img/trasimg/auto.png);
+  background-image: url(../img/trasimg/1.png);
   -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   -webkit-animation-delay: 4s;
@@ -266,7 +266,7 @@ footer .footer__top .footer__top p {
 }
 .trasladamos .grid .grid_item.grid_item2 {
   grid-area: item2;
-  background-image: url(/img/trasimg/autocomp.png);
+  background-image: url(../img/trasimg/2.png);
   -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   -webkit-animation-delay: 4.2s;
@@ -274,7 +274,7 @@ footer .footer__top .footer__top p {
 }
 .trasladamos .grid .grid_item.grid_item3 {
   grid-area: item3;
-  background-image: url(/img/trasimg/barcos.png);
+  background-image: url(../img/trasimg/3.png);
   -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   -webkit-animation-delay: 4.4s;
@@ -282,7 +282,7 @@ footer .footer__top .footer__top p {
 }
 .trasladamos .grid .grid_item.grid_item4 {
   grid-area: item4;
-  background-image: url(/img/trasimg/camioneta.png);
+  background-image: url(../img/trasimg/4.png);
   -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   -webkit-animation-delay: 4.6s;
@@ -290,7 +290,7 @@ footer .footer__top .footer__top p {
 }
 .trasladamos .grid .grid_item.grid_item5 {
   grid-area: item5;
-  background-image: url(../img/trasimg/moto-electrica-de-pista-shadow-kw-motors-foto-transparente-min-e1538967358902.png);
+  background-image: url(../img/trasimg/5.png);
   -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   -webkit-animation-delay: 4.8s;
@@ -298,7 +298,7 @@ footer .footer__top .footer__top p {
 }
 .trasladamos .grid .grid_item.grid_item6 {
   grid-area: item6;
-  background-image: url(../img/trasimg/tractor.png);
+  background-image: url(../img/trasimg/6.png);
   -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   -webkit-animation-delay: 5s;
@@ -461,7 +461,7 @@ footer .footer__top .footer__top p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/img/camiondib1.jpg);
+  background-image: url(../img/camiondib1\(1\).jpg);
   background-position: center;
   background-size: cover;
   height: 150vh;
