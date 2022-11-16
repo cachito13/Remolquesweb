@@ -9,12 +9,17 @@ footer {
         justify-content: space-between;
         color: $color_4;
         padding: 4rem;
+        
         .footer__top p {
             text-align: center;
         
         }
-    }
 
+    }
+    @media screen and (max-width: 743px) {
+        @include footermedia;
+     }
+         
         -webkit-animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
         animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
         animation-duration: 1s;

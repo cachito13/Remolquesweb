@@ -1,12 +1,18 @@
 
 
 /***********************Titulo portada*********************/
+
 .portada {
     @include flexcolcent;
     background-image: url(../img/camiondib1\(1\).jpg);
     background-position: center;
     background-size: cover;
     height: 150vh;
+    @media screen and (max-width: 900px){
+     @include imgportada;
+     @include textport;
+    }
+
     .portada__titulo {
         -webkit-animation: roll-in-left .6s ease-out both;
         animation: roll-in-left .6s ease-out both;

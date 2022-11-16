@@ -1,14 +1,15 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 * .body {
-  background-color: rgb(236, 231, 231);
+  background-color: white;
 }
 
 ul,
@@ -20,9 +21,18 @@ ol .a {
   text-decoration: none;
 }
 
+/*media queris*/
 /****************Barra de Navegacion**********************/
 .navbar-toggler {
-  background: color aliceblue;
+  background: white;
+}
+.navbar-toggler body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid rgb(59, 23, 218);
 }
 
 .nav__titulo {
@@ -31,7 +41,7 @@ ol .a {
 }
 
 .nav-link.active {
-  background-color: aliceblue;
+  background-color: rgb(245, 13, 13);
   border-radius: 1rem;
 }
 
@@ -49,9 +59,21 @@ ol .a {
   margin-left: 10px;
   text-align: center;
   display: inline-block;
+  background-color: rgb(161, 167, 172);
+  border-radius: 1rem;
+  transition: 1s;
 }
-.nav-item.nav-item a {
-  color: aliceblue;
+.nav-item .nav-item a {
+  color: aqua;
+}
+.nav-item .nav-item a body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    ╷\a 10 │         background-color: white;\d\a    │                           ^^^^^^^^^^^^^^^^^^^\a    ╵\a   scss\\base\\_reset.scss 10:27  @import\a   scss\\main.scss 1:9           root stylesheet";
 }
 
 main {
@@ -65,7 +87,7 @@ main {
 
 .main__ind {
   background: rgb(39, 41, 42);
-  background: linear-gradient(100deg, rgba(39, 41, 42, 0.5718488079) 0%, rgb(168, 21, 51) 100%);
+  background: linear-gradient(340deg, rgb(39, 41, 42) 3%, rgb(88, 135, 172) 51%, rgb(168, 21, 51) 100%);
 }
 
 .navbar {
@@ -95,12 +117,12 @@ main {
 }
 /**************Nav****************/
 .nav-item:hover {
-  background-color: rgb(204, 36, 36);
+  background-color: aliceblue;
   transform: scale(1.1) translatex(-10px);
   border-radius: 20px;
   box-shadow: rgba(170, 169, 169, 0.521) 5px 5px, rgba(8, 7, 7, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(151, 55, 116, 0.1) 20px 20px, rgba(223, 14, 146, 0.05) 25px 25px;
 }
-.nav-item:hover.nav-item {
+.nav-item:hover .nav-item {
   transition: transform 1s;
 }
 
@@ -159,13 +181,13 @@ main {
 .nav__titulo i {
   -webkit-animation-name: none;
           animation-name: none;
-  color: rgb(156, 16, 16);
-  font-style: italic;
+  color: red;
+  font-style: "Nanum Myeongjo", serif;
   font-size: 1.2rem;
 }
 .nav__titulo.button,
 .nav__titulo i.button {
-  border-color: white;
+  border-color: red;
 }
 
 /*********************************************FOOTER***********************************************/
@@ -190,6 +212,13 @@ footer .footer__top {
 }
 footer .footer__top .footer__top p {
   text-align: center;
+}
+@media screen and (max-width: 743px) {
+  footer .footer__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @-webkit-keyframes rotate-hor-center {
   0% {
@@ -224,13 +253,27 @@ footer .footer__top .footer__top p {
 .trasladamos {
   text-align: center;
   font-size: 2rem;
-  font-family: "Alfa Slab One";
-  border: 2px black;
+  padding-top: 6rem;
+  font-family: "Alfa Slab One", cursive;
+  height: 350px;
+  border: 2px solid rgb(0, 0, 0);
   padding: 10px;
   border-radius: 10px;
   margin-inline: 10px;
+  margin-top: 40px;
   margin-left: 20px;
-  height: 100%;
+  transition: transform 1s;
+}
+.trasladamos:hover {
+  transform: scale(1.1) translatey(-30px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+@media screen and (max-width: 375px) {
+  .trasladamos .grid {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
 }
 .trasladamos .grid {
   display: grid;
@@ -241,20 +284,13 @@ footer .footer__top .footer__top p {
   border: solid rgb(20, 20, 20);
   box-shadow: 1px 8px 8px;
   border-radius: 20px;
-  transition: transform 1s;
-}
-.trasladamos .grid:hover {
-  transform: scale(1.1) translatey(5px);
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .trasladamos .grid .grid_item {
   background-size: cover;
   background-position: center center;
   padding: 2rem;
   background-repeat: no-repeat;
-  box-shadow: 1px 8px 8px;
-  border-radius: 20px;
-  height: 150px;
+  height: 100%;
 }
 .trasladamos .grid .grid_item.grid_item1 {
   grid-area: item1;
@@ -306,14 +342,12 @@ footer .footer__top .footer__top p {
 }
 @-webkit-keyframes roll-in-blurred-left {
   0% {
-    -webkit-transform: translateX(-1000px) rotate(-720deg);
-    -webkit-transform: translateX(-1000px) rotate(-720deg);
+    transform: translateX(-1000px) rotate(-720deg);
     filter: blur(50px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0) rotate(0deg);
-    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
     filter: blur(0);
     opacity: 1;
   }
@@ -367,95 +401,6 @@ footer .footer__top .footer__top p {
   background-image: url(../img/trasimg/camion6.jfif);
 }
 
-@media screen and (max-width: 375px) {
-  .nav__titulo,
-.nav__titulo i {
-    -webkit-animation-name: none;
-            animation-name: none;
-    color: white;
-    font-style: italic;
-    font-size: 1.2rem;
-  }
-  .button {
-    border-color: white;
-  }
-  .portada__texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .grid {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-  }
-  .trasladamos:hover,
-.ubicacion__mapa:hover {
-    transform: none;
-    box-shadow: none;
-  }
-  .trasladamos {
-    height: 570px;
-  }
-  .ubicacion__title {
-    font-size: 1.5rem;
-  }
-  .footer__top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .portada {
-    background-image: url(../img/camionchiquito.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 300px;
-    background-color: white;
-  }
-  /****************************************SECCION MEDIAQUERIS 375px*************************************/
-  /*********************TRASLADAMOS.HTML********************/
-  .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .card {
-    align-items: center;
-    border: solid 2px rgb(10, 10, 10);
-    width: 350px;
-    box-shadow: none;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .card:hover {
-    transform: none;
-    box-shadow: none;
-  }
-  /*************************NUESTRAEMPRESA.HTML****************************/
-  .grid_sect {
-    display: flex;
-    flex-direction: column;
-  }
-  .grid__item:hover {
-    transform: none;
-    box-shadow: none;
-  }
-  .nuestra__desc {
-    font-size: 1.2rem;
-  }
-}
-/****************************************MEDIAQUERIS 1200PX*************************************/
-/*************************INDEX.HTML********************/
-@media screen and (max-width: 1200px) {
-  .portada {
-    height: 50VH;
-    background-color: white;
-  }
-  /*********************NUESTRAEMPRESA.HTML********************/
-  .card {
-    max-width: 500px;
-  }
-}
 /***********************Titulo portada*********************/
 .portada {
   display: flex;
@@ -465,6 +410,17 @@ footer .footer__top .footer__top p {
   background-position: center;
   background-size: cover;
   height: 150vh;
+}
+@media screen and (max-width: 900px) {
+  .portada {
+    background-image: url(../img/camionchiquito.jpg);
+    height: 50vh;
+  }
+  .portada .portada__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .portada .portada__titulo {
   -webkit-animation: roll-in-left 0.6s ease-out both;
@@ -569,6 +525,25 @@ footer .footer__top .footer__top p {
   padding-top: 2rem;
   font-family: "Alfa Slab One", cursive;
   color: aliceblue;
+}
+@media screen and (max-width: 900px) {
+  .main_trasl .productos .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_trasl .productos .cards .card {
+    align-items: center;
+    border: solid 2px rgb(10, 10, 10);
+    width: 350px;
+    box-shadow: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .main_trasl .productos .cards .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
 .main_trasl .productos .cards {
   display: flex;

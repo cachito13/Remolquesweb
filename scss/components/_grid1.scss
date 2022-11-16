@@ -3,7 +3,7 @@
     font-size: 2rem;
     padding-top: 6rem;
     font-family: 'Alfa Slab One', cursive;
-    height: 400px;
+    height: 350px;
     border: 2px solid rgb(0, 0, 0);
     padding: 10px;
     border-radius: 10px;
@@ -16,6 +16,15 @@
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     
     }
+    @media screen and (max-width: 375px){
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+          }
+
+    }
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -25,17 +34,17 @@
             "item4 item5 item6";
         gap: 1rem;
         @include borderboxradio;
+       
+      
 
         .grid_item {
             background-size: cover;
             background-position: center center;
             padding: 2rem;
             background-repeat: no-repeat;
+            height: 100%;
+            
 
-
-              
-           
-       
             &.grid_item1 {
                 grid-area: item1;
                 background-image: url(../img/trasimg/1.png);
