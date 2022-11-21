@@ -2,20 +2,14 @@
 
 
 .navbar-toggler {
-    background: $background-color_2; 
+    background: $background-color_1; 
    
-   body::before {
-     font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-         "Droid Sans Mono", monospace, monospace;
-     white-space: pre;
-     display: block;
-     padding: 1em;
-     margin-bottom: 1em;
-     border-bottom: 2px solid rgb(59, 23, 218);
+
     }
-}
+
 
 .nav__titulo {
+    
     font-size: 1rem;
     font-family: 'Alfa Slab One', cursive;
     
@@ -25,34 +19,26 @@
     border-radius: 1rem;
 }
 .logo {
-    color: $color_2;
+    color: $background-color_1;
     padding-left: 1rem;
+    
+   
 }
 .navbar {
-    padding: 1.5rem;
+    padding: 2rem;
 }
 .nav-item {
     margin-right: 20px;
     margin-left: 10px;
     text-align: center;
     display: inline-block;
-    background-color: rgb(161, 167, 172);
+    background-color: rgb(234, 238, 241);
     border-radius: 1rem;
     transition: 1s;
     .nav-item a {
-        color:aqua;
-        
-       
-       body::before {
-         font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-             "Droid Sans Mono", monospace, monospace;
-         white-space: pre;
-         display: block;
-         padding: 1em;
-         margin-bottom: 1em;
-         border-bottom: 2px solid black;
-         content: "Error: Undefined variable.\a    \2577 \a 10 \2502          background-color: white;\d\a    \2502                            ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\base\\_reset.scss 10:27  @import\a   scss\\main.scss 1:9           root stylesheet";
-       }
+        color:rgb(55, 0, 255);
+             
+      
     }
 }
 

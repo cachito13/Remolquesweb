@@ -2,19 +2,9 @@
   @include gradient;
     .productos {
     .productos__titulo {
-      text-align: center;
-      font-size: 2rem;
-      padding-top: 2rem;
-      font-family: "Alfa Slab One", cursive;
-      color: $color_2;
+   @include subtitle;
+   border:none;
     }
-    @media screen and (max-width: 900px){
-
-    @include traslimg;
-
-    }
-     
-   
 
 
 
@@ -22,7 +12,7 @@
         display: flex;
         justify-content: space-between;
         gap: 20px;
-                padding-top: 3rem;
+        padding-top: 3rem;
         padding-bottom: 3rem;
         .card {
             display: flex;
@@ -30,17 +20,23 @@
             justify-content: space-between;
             align-items: center;
             border: solid 2px rgb(10, 10, 10);
-            width: 700px;
-            height: 30 0px;
+            
+            width: 75vw;
+            max-width: 1000px;
+            min-width: 320px;
+
+
             box-shadow: 1px 8px 8px rgb(192, 43, 135);
             border-radius: 10px;
             overflow: hidden;
             transition: transform 1s;
+
             &:hover{
-                transform: scale(1.1) translatey(-30px);
-                box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-            
-            }
+              transform: scale(1.1) translatey(-30px);
+              box-shadow: rgba(86, 62, 114, 0.4) 5px 5px, rgba(143, 113, 132, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+          
+          }
+          
             .card__img {
                 width: 100%;
                 padding: 1rem;
@@ -63,6 +59,38 @@
         }
     }
    
+
+  }
+  @media screen and (max-width: 1046px){
+
+   
+      .cards {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .card {
+            align-items: center;
+            border: solid 2px rgb(10, 10, 10);
+            width: 75vw;
+            box-shadow: none;
+            border-radius: 10px;
+            overflow: hidden;
+        
+          }
+      }
+  
+  }
+    @media screen and (max-width: 500px){
+      .cards{
+        align-items:stretch;
+        margin: auto;
+        width: 75vw;
+        max-width: 1000px;
+        min-width: 350px;
+          
+      
+    }
+
 
   }
 }

@@ -1,28 +1,27 @@
 .main__nuestra {
    @include gradient;
     .nuestra {
+        gap: 2rem;
         display: flex;
         flex-direction: column;
 
         .nuestra__texto {
-            color: $color_2;
-
+            @include subtitle;
+            
+            
             .nuestra__titulo {
-                text-align: center;
-                font-size: 2rem;
-                padding-top: 2rem;
-                font-family: $font-family_1;
+              font-size: 2rem;
+                           
             }
-
             .nuestra__desc {
                 text-align: center;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 padding: 2rem;
-                font-family: $font-family_3;
+                font-family: $font-family_2;
             }
+         
         }
-
-       
+     
 
 
     }

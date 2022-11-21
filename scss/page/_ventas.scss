@@ -5,11 +5,8 @@
     @include gradient;
     padding: 2rem;
     .header__titulo {
-        text-align: center;
-        font-size: 2rem;
-        padding-top: 1rem;
-        font-family: $font-family_1;
-        color: $color_1;
+        @include subtitle;
+        border:none;
     
     }
     .tabla__ventas {

@@ -1,13 +1,61 @@
 .main__cont{
    @include gradient;
-    .titulo__cot {
-        text-align: center;
-        font-size: 2rem;
-        font-family: $font-family_1;
-        color:$color_2;
-        form {
-            padding: 3rem;
-        
-        }
+
+   .titulo__cot {
+    @include subtitle;
+
+    form {
+        padding: 3rem;
+    
     }
 }
+   .main__container{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 2rem;
+    @include mediacontacto;
+    
+   }
+    
+   .main__redes{
+    
+        text-align:center;
+        font-size: 2rem;
+        font-family: $font-family_1;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 10px;
+            padding: 2rem;
+            transition: transform 1s;
+            &:hover {
+                @include hovercolor1;
+            
+            }
+
+            @media screen and (max-width: 500px) {
+               border: none;
+              margin: 0;
+              padding: 0;
+                width: 90vw;
+                transition: none;
+                box-sizing: border-box;
+                font-size: 0.5rem;
+               &:hover {
+                                transform:none;
+                box-shadow:none;
+            }
+
+            }
+
+            .main__redes_icons{
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                padding:10px;
+                font-size: 2rem;  
+                
+            }
+          
+    }
+   }
+

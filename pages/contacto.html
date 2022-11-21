@@ -22,7 +22,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
-                <a class="nav__titulo" href="#">Remolques Muñoz<i class="logo bi bi-truck-flatbed"></i></a>
+                <a class="nav__titulo" href="../index.html">Remolques Muñoz<i class="logo bi bi-truck-flatbed"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -54,33 +54,38 @@
 
     </header>
     <main class="main__cont">
+      <h2 class="titulo__cot">Complete el formulario</h2>
 
-        <section>
+
+
+      <section class="main__container">
+
+        <section class="main__form">
             <form method="POST" action="/index.php" class="needs-validation" novalidate>
-                <h2 class="titulo__cot">Complete el formulario</h2>
+               
                 <div class="form-row mt-5">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-xs-4 mb-3">
                         <label for="dato validarNombre">Nombre:<span class="red">*</span></label>
                         <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
                     </div>
                 </div>
 
                 <div class="form-row">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-xs-4 mb-3">
                         <label for="dato validarApellidos">Apellidos:<span class="red">*</span></label>
                         <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
                     </div>
                 </div>
 
                 <div class="form-row">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-xs-4 mb-3">
                         <label for="validarEmail">Email:<span class="red">*</span></label>
                         <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
                     </div>
                 </div>
 
                 <div class="form-row">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-xs-4 mb-4">
                         <label for="validarTelefono">Teléfono:</label>
                         <input type="number" class="form-control" id="validarTelefono" name="validarTelefono"
                             max="999999999">
@@ -88,7 +93,7 @@
                 </div>
 
                 <div class="form-row">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-xs-4 xs-4">
                         <label for="validarTema">Tema:<span class="red">*</span></label>
                         <select class="custom-select" id="validarTema" name="validarTema" required>
                             <option selected disabled value="">Selecciona...</option>
@@ -101,7 +106,7 @@
                 </div>
 
                 <div class="form-row">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-xs-4 xs-4">
                         <label for="validarAsunto">Asunto:</label>
                         <input type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
                     </div>
@@ -121,7 +126,22 @@
             </form>
 
         </section>
+        <section class="main__redes">
+            <h2>Ubicacion</h2>          
+            <h3>Saez Peña 418 - Lules - Tucuman <br>
+            Telefono:3816758488 <br>
+            info@remolquesmunoz.com</h3>
+            <h4>Siguenos</h4>
+            <div class="main__redes_icons">
+                <a href="https://www.instagram.com/"target="_blank"> <i class="bi bi-instagram"></i></a>
+                <a href="https://es-la.facebook.com/"target="_blank"><i class="bi bi-facebook"></i></a></i>
+                <a href="https://twitter.com/?lang=es"target="_blank"><i class="bi bi-twitter"></i></a>
+                
+            </div>
+            <h4>@2022 politica de privacidad</h4>
 
+        </section>
+    </section>
     </main>
 
 </body>
@@ -129,10 +149,10 @@
     <div class="footer__top">
         <div>
             <h2 class="footer__title"><i class="bi bi-truck-flatbed"></i> REMOLQUES MUÑOZ</h2>
+                <P>Servicio de emergencias mecanicas </P>
+                <p> Calle Saez Peña 418 - Lules - Tucuman <br>
+                    INFO@REMOLQUESMUNOZ.COM</P>
 
-            <P>Servicio de emergencias mecanicas </P>
-            <p> Calle 41, Las talitas, Tucuman <br>
-                INFO@REMOLQUESMUNOZ.COM</P>
 
         </div>
 
@@ -141,9 +161,9 @@
 
 
             <div class="redes__iconos">
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-twitter"></i>
+                <a href="https://www.instagram.com/"target="_blank"> <i class="bi bi-instagram"></i></a>
+                    <a href="https://es-la.facebook.com/"target="_blank"><i class="bi bi-facebook"></i></a></i>
+                    <a href="https://twitter.com/?lang=es"target="_blank"><i class="bi bi-twitter"></i></a>
             </div>
         </div>
 
