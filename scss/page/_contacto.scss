@@ -31,21 +31,8 @@
                 @include hovercolor1;
             
             }
-
-            @media screen and (max-width: 500px) {
-               border: none;
-              margin: 0;
-              padding: 0;
-                width: 90vw;
-                transition: none;
-                box-sizing: border-box;
-                font-size: 0.5rem;
-               &:hover {
-                                transform:none;
-                box-shadow:none;
-            }
-
-            }
+            @include mediacontacto500px;
+         
 
             .main__redes_icons{
                 display: flex;
